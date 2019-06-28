@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电齿虎音乐官方网站首页</title>
+
+  <link href="css/swiper.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/luanhuan.css">  
+  <link rel="stylesheet" href="css/swiper.css">
+  
+  
+ <script src="js/as/jquery.min.js"></script>
+<script src="js/as/swiper.min.js"></script> 
+ 
+<link rel="stylesheet" href="css/style.css">
+  
+<script src="js/my.js"></script> 
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+<script type="text/javascript">
+			$(function() {
+
+				$('#carousel ul').carouFredSel({
+					prev: '#prev',
+					next: '#next',
+					pagination: "#pager",
+					scroll: 1000
+				});
+	
+			});
+		</script>
+</head>
+
+<body>
+<!--  header-->
+<div class="header">
+  <div class="logo"><img src="images/logo.png" alt=""></div>
+  <div class="top_btn">
+    <a href="" class="login">登录</a>
+    <a href="" class="regit">注册</a>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">音乐风格</a></li>
+      <li><a href="#">音乐人</a></li>
+      <li><a href="#">素材</a></li>
+      <li><a href="#">购物车</a></li>
+    </ul>
+  </div>
+</div>
+<!--banner-->
+<div id="banner01">
+  <div class="banner-l">
+    <p class="banner_txt1">电子音乐、嘻哈音乐领域</p>
+    <p class="banner_txt1">极具有影响力及实力的</p>
+    <p class="banner_txt2">服务平台</p>
+    <p class="banner_txt3">我们为大家提供音乐交易、素材贩卖、周边购买等服务，努力提升电子音乐、嘻哈音乐市场的商业价值，延长并完善电子音乐、嘻哈音乐产业链。</p>
+    <div class="search_bar">
+      <input type="text" name="search" placeholder="您在寻找什么类型的音乐？">
+    </div>
+  </div>
+  <div class="banner-r"><img src="images/banner01.png" alt=""></div> 
+</div>
+  
+<!--hot_music-->
+<div class="hot_music">
+  <div class="hot_music_l">热门音乐</div>
+  <a href="#" class="hot_music_l">更多>></a>
+</div>
+<!--  音乐切换-->
+  <div class="swiper-container" id="gallery">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="images/img1.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide">
+			<img src="images/img2.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide">
+			<img src="images/img3.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide">
+			<img src="images/img4.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide">
+			<img src="images/img5.jpg" alt="轮播图">
+		</div>
+	</div>
+	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
+<div class="swiper-container swiper-container-thumbs" id="thumbs" >
+	<div class="swiper-wrapper" style="transition-duration: 0ms;" >
+		<div class="swiper-slide" style="display:none">
+			<img src="images/img1.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide" style="display:none">
+			<img src="images/img2.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide" style="display:none"> 
+			<img src="images/img3.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide" style="display:none">
+			<img src="images/img4.jpg" alt="轮播图">
+		</div>
+		<div class="swiper-slide" style="display:none">
+			<img src="images/img5.jpg" alt="轮播图">
+		</div>
+	</div>
+	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
+
+<script type="text/javascript">
+var thumbsSwiper = new Swiper('#thumbs', {
+	spaceBetween: 10,
+	slidesPerView: 5,
+	watchSlidesVisibility: true, //防止不可点击
+})
+var gallerySwiper = new Swiper('#gallery', {
+	effect : 'coverflow',
+	spaceBetween: 10, //缩略图间距
+	slidesPerView: 3,
+	centeredSlides: true,
+	initialSlide :2,
+	loop: true,
+	autoplay: true,
+	thumbs: {
+		swiper: thumbsSwiper,
+	}
+})
+</script>
+  
+  
+  
+
+<!--  出售音乐-->
+<div class="sale_music">
+  <div class="sale_music_title"><p class="main_title">在线出售你的音乐</p><p class="sub_title">创建专属页面，打造交流平台 </p></div>
+  <div class="sale_music_cnt">
+    <div class="sale_music_cnt_l"><img src="images/changpian.png" alt=""></div>
+    <div class="sale_music_cnt_r">
+    <p>用户可以在电齿虎平台上进行音乐交易，优秀的艺术家、制作人在电齿虎平台上传他们的音乐作品，传递给卓越的、有潜力的音乐人，通过电齿虎平台的交易系统及可选择的授权方式，即可完成交易。</p>
+    <a href="" class="on_sale">开始出售</a><a href="" class="liulan">浏览歌曲</a>
+    </div>
+  </div>
+</div>
+  
+<!--热门音乐-->
+<div class="singer">
+  <div class="singer_l">热门音乐</div>
+  <a href="#" class="hot_music_l">更多>></a>
+</div>
+  <div id="wrapper">
+			<div id="carousel">
+				<ul>
+					<li><img src="images/up1.jpg" alt="" /><span>Image1</span></li>
+					<li><img src="images/up2.jpg" alt="" /><span>Image2</span></li>
+					<li><img src="images/up3.jpg" alt="" /><span>Image3</span></li>
+					<li><img src="images/up4.jpg" alt="" /><span>Image4</span></li>
+					<li><img src="images/up5.jpg" alt="" /><span>Image5</span></li>
+					<li><img src="images/up6.jpg" alt="" /><span>Image6</span></li>
+          <li><img src="images/up6.jpg" alt="" /><span>Image6</span></li>
+          <li><img src="images/up6.jpg" alt="" /><span>Image6</span></li>
+          <li><img src="images/up6.jpg" alt="" /><span>Image6</span></li>
+          <li><img src="images/up6.jpg" alt="" /><span>Image6</span></li>
+				</ul>
+				<div class="clearfix"></div>
+				<a id="prev" class="prev" href="#">&lt;</a>
+				<a id="next" class="next" href="#">&gt;</a>
+				<div id="pager" class="pager"></div>
+			</div>
+		</div>
+
+
+ 
+
+<!-- 采访-->
+
+<div class="interview">
+  <div class="interview_title"><p class="interview_main_title">采访</p><p class="sub_title">看看这些出色的艺术家为什么选择电齿虎平台</p></div>
+  <!--  start-->
+  <div class="swiper-container" id="banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"> <img src="images/t1.png" alt="轮播图"> </div>
+        <div class="swiper-slide"> <img src="images/t2.png" alt="轮播图"> </div>
+        <div class="swiper-slide"> <img src="images/t3.png" alt="轮播图"> </div>
+        <div class="swiper-slide"> <img src="images/t4.png" alt="轮播图"> </div>
+        <div class="swiper-slide"> <img src="images/t5.png" alt="轮播图"> </div>
+    </div>
+        </div>
+<div class="swiper-pagination banner_page"></div>
+<!--<script src="js/jquery.min_1.js"></script> -->
+<script src="js/swiper.min.js"></script> 
+<script type="text/javascript">
+			$(function(){
+				var mySwiper = new Swiper("#banner",{
+					loop: true,
+					loopedSlides: 5,
+				    slidesPerView: 'auto',
+				    autoplay: true,
+				    centeredSlides:true,
+				    initialSlide :2,
+				    watchSlidesProgress: true,
+				    pagination: {
+                        el: '.banner_page',
+                        clickable :true,
+                    },
+                    on: {
+                        progress: function(progress) {
+                            for (i = 0; i < this.slides.length; i++) {
+                                var slide = this.slides.eq(i);
+                                var slideProgress = this.slides[i].progress;
+                                if (Math.abs(slideProgress) > 1) {
+                                    var modify = (Math.abs(slideProgress) - 1) * 0.4 + 1;
+                                }
+                                translate = slideProgress * modify * 318 + 'px';
+                                scale = 1 - Math.abs(slideProgress) / 5;
+                                zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                                slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                                slide.css('zIndex', zIndex);
+                                slide.css('opacity', 1);
+                                if (Math.abs(slideProgress) > 3) {
+                                    slide.css('opacity', 0);
+                                }
+                            }
+                        },
+                        setTransition: function(transition) {
+                            for (var i = 0; i < this.slides.length; i++) {
+                                var slide = this.slides.eq(i)
+                                slide.transition(transition);
+                            }
+
+                        }
+                    }
+				})
+			})
+		</script>
+<!--  end-->
+</div>
+
+
+
+<!--  切换-->
+
+<div class="start_music">
+  <div class="start_music_cnt">
+    <div class="start_music_cnt_title"><p class="interview_main_title">准备好开始你的音乐生涯了吗？</p><p class="sub_title">已经有不可计数的伙伴们迫不及待了！</p></div>
+    <a href="" class="on_sale2">开始出售</a><a href="" class="liulan2">浏览歌曲</a>
+  </div>
+</div>
+<div class="footer">
+  <div class="f_logo"><img src="images/logo2.png" alt=""></div>
+  <div class="f_link">
+    <p>关于我们</p>
+    <ul class="sub_nav">
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+  <div class="f_link">
+    <p>帮助中心</p>
+    <ul class="sub_nav">
+      <li><a href="#">使用指南</a></li>
+      <li><a href="#">服务条款</a></li>
+      <li><a href="#">音乐人分销协议</a></li>
+    </ul>
+  </div>
+  <div class="f_link">
+    <p>语言/language</p>
+    <ul class="sub_nav">
+      <li><a href="#">中文</a></li>
+      <li><a href="#">ENGLISH</a></li>
+    </ul>
+  </div>
+  <div class="shejiao">
+    <div class="sj_nav">
+      <div class="wx"><a href="#"><img src="images/weixin.png" alt=""></a><p class="wx_ewm"><img src="images/wx_ewm.png" alt=""></p></div>
+      <div class="wb"><a href="#"><img src="images/weibo.png" alt=""></a><p class="wb_ewm"><img src="images/wx_ewm.png" alt=""></p></div>
+    </div>
+  </div>
+</div>
+<div class="f_copyright">悦途文化传媒有限公司版权所有·<span>湘ICP备18019188号-1</span></div>
+</body>
+</html>
